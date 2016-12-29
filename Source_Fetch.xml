@@ -1,0 +1,6 @@
+<project name="Code Backup Without Folders" default="retrieve" basedir="." xmlns:sf="antlib:com.salesforce">
+	<target name="Source_Fetch">
+		<!-- Retrieve the contents into another directory -->
+		<sf:retrieve username="nitinchandwani@hotmail.com" password="321@ibirds123" serverurl="login.salesforce.com" pollWaitMillis="40000" retrieveTarget="C:\Program Files (x86)\Jenkins\workspace\fetch-org" unpackaged="C:\Program Files (x86)\Jenkins\workspace\fetch-org\package.xml"/>
+	</target>
+</project>
