@@ -1,4 +1,4 @@
-trigger AccountTrigger on Account (Before Insert) {
+trigger ContactTrigger on Contact (After Insert) {
     System.debug( '####' + Trigger.new );
     System.debug( '####' + Trigger.newMap );
     System.debug( '####' + Trigger.new );
